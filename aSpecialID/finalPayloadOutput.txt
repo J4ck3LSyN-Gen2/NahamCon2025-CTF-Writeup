@@ -1,0 +1,99 @@
+[*] Starting IPID spoofing attempt for 137.184.230.90:8080
+[*] Strategy: Sequential IPID probing from 0 to 65535...
+[*] Starting 10 worker threads...
+[*] Thread ScannerThread-4: Sending SYN packet with IPID: 13404
+[+] SUCCESS! Received SYN-ACK from 137.184.230.90 with IPID: 0 for our IPID: 1337
+    [+] Response TCP flags: SA
+    [!] Initiating full TCP handshake and HTTP GET request...
+    [+] Sent ACK packet with seq=2112782609, ack=3770466018
+    [+] Sent HTTP GET request. Expecting response...
+
+[+] Received HTTP Response Packets (via sniff):
+    [+] Packet received: Ether / IP / TCP 137.184.230.90:http_alt > 172.17.249.160:40294 A / Raw
+        TCP Flags: A, Seq: 3770466018, Ack: 2112782919
+        TCP Payload Length: 536
+        Payload (raw bytes, length 536): b'HTTP/1.1 200 OK\r\nDate: Sat, 24 May 2025 23:11:43 GMT\r\nServer: Apache/2.4.63 (Unix)\r\nLast-Modified: Fri, 23 May 2025 14:07:48 GMT\r\nETag: "7b03-635ce1f7bb500"\r\nAccept-Ranges: bytes\r\nContent-Length: 31491\r\nConnection: close\r\nContent-Type: text/html\r\n\r\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fu'
+        Payload (decoded snippet): HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 3149...
+    [+] Packet received: Ether / IP / TCP 137.184.230.90:http_alt > 172.17.249.160:40294 A / Raw
+        TCP Flags: A, Seq: 3770466018, Ack: 2112782919
+        TCP Payload Length: 536
+        Payload (raw bytes, length 536): b'HTTP/1.1 200 OK\r\nDate: Sat, 24 May 2025 23:11:43 GMT\r\nServer: Apache/2.4.63 (Unix)\r\nLast-Modified: Fri, 23 May 2025 14:07:48 GMT\r\nETag: "7b03-635ce1f7bb500"\r\nAccept-Ranges: bytes\r\nContent-Length: 31491\r\nConnection: close\r\nContent-Type: text/html\r\n\r\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fu'
+        Payload (decoded snippet): HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 3149...
+    [+] Packet received: Ether / IP / TCP 137.184.230.90:http_alt > 172.17.249.160:40294 A / Raw
+        TCP Flags: A, Seq: 3770466018, Ack: 2112782919
+        TCP Payload Length: 536
+        Payload (raw bytes, length 536): b'HTTP/1.1 200 OK\r\nDate: Sat, 24 May 2025 23:11:43 GMT\r\nServer: Apache/2.4.63 (Unix)\r\nLast-Modified: Fri, 23 May 2025 14:07:48 GMT\r\nETag: "7b03-635ce1f7bb500"\r\nAccept-Ranges: bytes\r\nContent-Length: 31491\r\nConnection: close\r\nContent-Type: text/html\r\n\r\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fu'
+        Payload (decoded snippet): HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 3149...
+    [+] Packet received: Ether / IP / TCP 137.184.230.90:http_alt > 172.17.249.160:40294 A / Raw
+        TCP Flags: A, Seq: 3770466018, Ack: 2112782919
+        TCP Payload Length: 536
+        Payload (raw bytes, length 536): b'HTTP/1.1 200 OK\r\nDate: Sat, 24 May 2025 23:11:43 GMT\r\nServer: Apache/2.4.63 (Unix)\r\nLast-Modified: Fri, 23 May 2025 14:07:48 GMT\r\nETag: "7b03-635ce1f7bb500"\r\nAccept-Ranges: bytes\r\nContent-Length: 31491\r\nConnection: close\r\nContent-Type: text/html\r\n\r\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fu'
+        Payload (decoded snippet): HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 3149...
+
+[+] Full HTTP Response (Aggregated):
+HTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 31491
+Connection: close
+Content-Type: text/html
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fuHTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 31491
+Connection: close
+Content-Type: text/html
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fuHTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 31491
+Connection: close
+Content-Type: text/html
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fuHTTP/1.1 200 OK
+Date: Sat, 24 May 2025 23:11:43 GMT
+Server: Apache/2.4.63 (Unix)
+Last-Modified: Fri, 23 May 2025 14:07:48 GMT
+ETag: "7b03-635ce1f7bb500"
+Accept-Ranges: bytes
+Content-Length: 31491
+Connection: close
+Content-Type: text/html
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fu
+    [+] Sent FIN packet to close connection.
