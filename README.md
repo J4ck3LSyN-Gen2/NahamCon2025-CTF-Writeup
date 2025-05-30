@@ -10,7 +10,7 @@ Landing Page: `ctf.nahamcon.com`
 
 ### Challenges
 
-# oucast
+# outcast
 
 ## Methodology:
 1. When going to the site we can see a `/test` directory with a comment: `this should not be accessable`
