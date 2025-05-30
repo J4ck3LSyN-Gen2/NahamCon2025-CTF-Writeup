@@ -3,6 +3,8 @@
 * Captain: J4ck3LSyN
 * Co-Player: ChoasFoundry
 
+## [NOTE] This is a copy of the directory and is not sorted, intended for use as future a reference!
+
 ## NahamCon 2025
 Landing Page: `ctf.nahamcon.com`
 
